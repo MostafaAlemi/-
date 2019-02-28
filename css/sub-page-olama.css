@@ -1,0 +1,264 @@
+@font-face {
+	font-family: Vazir;
+	src: url(../Vazir-Medium-FD.ttf);
+}
+
+body, html{
+    direction: rtl;
+    font: 14px Vazir;
+}
+
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+
+p, strong {
+    text-align: justify;
+    font-size: 14px;
+}
+
+/*   */
+
+.border-images {
+    position: relative;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.border-image {
+    position: fixed;
+    width: 11%;
+    z-index: 2;
+}
+
+.border-top {
+    width: 100%;
+    height: 66px;
+    position: fixed;
+    display: inline-block;
+    top: 0;
+    left: 0;
+    background: white;
+    z-index: 1;
+}
+
+.border-bottom {
+    width: 100%;
+    height: 66px;
+    position: fixed;
+    display: inline-block;
+    bottom: 0;
+    right: 0;
+    background: white;
+    z-index: 1;
+}
+
+.border-top-right-img {
+    transform: rotate(180deg);
+    top: 0;
+    right: 0;
+}
+
+.border-top-left-img {
+    transform: rotate(90deg);
+    top: 0;
+    left: 0;
+}
+
+.border-bottom-right-img {
+    transform: rotate(270deg);
+    bottom: 0;
+    right: 0;
+}
+
+.border-bottom-left-img {
+    bottom: 0;
+    left: 0;
+}
+
+.container {
+    position: absolute;
+    top: 0;
+    right: 8%;
+    left: 8%;
+    margin-top: 10%;
+    margin-bottom: 72px;
+}
+
+.text {
+    padding: 14px;
+    box-shadow: 0px 0px 14px black;
+    border-radius: 5px;
+}
+
+.sub-title {
+    margin: 40px 0;
+}
+
+.sub-title h3 {
+    padding-top: 8px;
+}
+
+/*  exclusive styles  */
+
+.first-title {
+    border: 1px solid black;
+    background-color: lightblue;
+    padding: 20px 14px;
+    border-radius: 12px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.first-title p {
+    text-align: center;
+    color: #130f40;
+}
+
+.idea-table {
+    padding: 16px 12px;
+    border-right: 8px solid #cccccc;
+    background-color: lightblue;
+    border-radius: 8px;
+    margin-bottom: 40px;
+    box-shadow: 0px 3px 2px black;
+}
+
+.idea-table p, .alem-quote p {
+    font-size: 16px;
+    text-align: justify;
+}
+
+.back-top-button {
+    right: 0;
+    position: fixed;
+    top: 25px;
+    left: 0;
+    margin: auto;
+    z-index: 313;
+    width: 80%;
+    text-align: center;
+}
+
+.video {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 66px;
+}
+
+.alem-quote {
+    border: 1px solid black;
+    background-color: lightblue;
+    padding: 20px 14px;
+    border-radius: 12px;
+    position: relative;
+    overflow: hidden;
+}
+
+.alem-quote p {
+    text-align: justify;
+    color: #130f40;
+}
+
+.alem-quote-img {
+    overflow: hidden;
+    border-radius: 50%;
+    width: 150px;
+    display: inline-block;
+    float: right;
+    height: 172px;
+    margin-left: 14px;
+}
+
+/*  Up Button  */
+
+.up-button {
+    position: fixed;
+    bottom: 72px;
+    left: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transform: translateY(200px);
+    transition: transform .3s;
+    z-index: 12;
+}
+
+.up-button-img {
+    background: url("../img/up-button.png") no-repeat center center;
+    background-size: cover;
+    width: 75px;
+    height: 75px;
+}
+
+.up-button-link {
+    display: block;
+    width: 75px;
+    height: 75px;
+    z-index: 14;
+}
+
+
+/*    Responsive    */
+
+
+@media only screen and (max-width: 800px) and (min-width: 100px) {
+
+    .up-button {
+        bottom: 14px;
+        left: 50%;
+        transform: translate(-50% ,200px);
+    }
+
+    .up-button-img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .letter-img {
+        width: 100%;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+}
+
+
+@media only screen and (max-width: 800px) and (min-width: 401px) {
+
+    .letter-img-hld {
+        width: 90% !important;
+    }
+
+}
+
+
+@media only screen and (max-width: 400px) {
+
+    .container {
+        margin-top: 90px;
+        right: 5%;
+        left: 5%;
+    }
+
+    .letter-img-hld {
+        width: 100% !important;
+    }
+
+}

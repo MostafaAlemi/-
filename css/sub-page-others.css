@@ -1,0 +1,273 @@
+@font-face {
+	font-family: Vazir;
+	src: url(../Vazir-Medium-FD.ttf);
+}
+
+body, html{
+    direction: rtl;
+    font: 14px Vazir;
+}
+
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+
+p, strong {
+    font-size: 14px;
+    text-align: justify;
+}
+
+.seyed-ali-main-page {
+    padding: 20px 2%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.main-page-menu-hld {
+    position: relative;
+}
+
+.main-page-menu-pic-hld {
+    position: absolute;
+    left: -66px;
+    animation-name: rotaty;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-delay: .5s;
+    animation-iteration-count: 1;
+}
+
+.main-page-menu-pic {
+    background: url(../img/imam-khamenei-menu.jpg) no-repeat center center;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+.main-page-menu-pic:before {
+    content: "";
+    width: 5em;
+    height: 166%;
+    position: absolute;
+    top: -30%;
+    left: 144%;
+    background-color: rgba(169, 188, 158, 0.3);
+    animation-name: glassy1;
+    animation-duration: 10s;
+    animation-timing-function: ease-out;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    transform: rotate(-45deg);
+}
+
+.main-page-menu-pic-border {
+    position: absolute;
+    left: -66px;
+    width: 650px;
+    height: 650px;
+    background: lightblue;
+    top: -20px;
+    border-radius: 50%;
+    border-right: 14px solid lightblue;
+    border-bottom: 14px solid lightblue;
+    z-index: -1;
+    animation-name: rotaty;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-delay: .5s;
+    animation-iteration-count: 1;
+}
+
+.main-page-menu-items-hld {
+    position: absolute;
+    left: 490px;
+}
+
+.main-page-menu-items {
+    flex-basis: 34%;
+    display: flex;
+    flex-direction: column;
+}
+
+.creator-item {
+    margin-top: 600px;
+}
+
+.main-page-menu-item {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 14px;
+}
+
+.biography-item-link {
+    transform: translateX(-40%);
+}
+
+.olama-item-link {
+    transform: translateX(7%);
+}
+
+.others-item-link {
+    transform: translateX(25%);
+}
+
+.vilayat-item-link {
+    transform: translateX(14%);
+}
+
+.why-imam-item-link {
+    transform: translateX(-30%);
+}
+
+.main-page-menu-item-pic {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    margin-right: 14px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    animation-name: smallrotaty;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+    visibility: hidden;
+}
+
+.main-page-menu-item-pic:before {
+    content: "";
+    width: 3em;
+    height: 200%;
+    position: absolute;
+    top: -50%;
+    left: 144%;
+    background-color: rgba(169, 188, 158, 0.3);
+    animation-name: glassy2;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+    transform: rotate(-45deg);
+}
+
+.biography-item-pic:before {
+    animation-delay: 4s;
+}
+
+.olama-item-pic:before {
+    animation-delay: 8s;
+}
+
+.others-item-pic:before {
+    animation-delay: 12s;
+}
+
+.vilayat-item-pic:before {
+    animation-delay: 16s;
+}
+
+.why-imam-item-pic:before {
+    animation-delay: 20s;
+}
+
+.creator-item-pic:before {
+    content: none;
+}
+
+.biography-item-pic {
+    background: url(../img/biography-menu.png) no-repeat center center;
+    background-size: 110px;
+    background-color: white;
+    animation-delay: 1.5s;
+}
+
+.olama-item-pic {
+    background: url(../img/olama-menu.png) no-repeat center center;
+    background-size: 110px;
+    background-color: white;
+    animation-delay: 1.8s;
+}
+
+.others-item-pic {
+    background: url(../img/others-menu.png) no-repeat center center;
+    background-size: 110px;
+    background-color: white;
+    animation-delay: 2.1s;
+}
+
+.vilayat-item-pic {
+    background: url(../img/vilayat-menu.png) no-repeat center center;
+    background-size: 100px;
+    background-color: white;
+    animation-delay: 2.4s;
+}
+
+.why-imam-item-pic {
+    background: url(../img/why-imam-menu.png) no-repeat center center;
+    background-size: 110px;
+    background-color: black;
+    animation-delay: 2.7s;
+}
+
+/*  Animations  */
+
+@keyframes glassy1 {
+    0% {
+        left: 144%;
+    }
+    10% {
+        left: -110%;
+    }
+    66% {
+        left: 144%;
+    }
+    100% {
+        left: -110%;
+    }
+}
+
+@keyframes glassy2 {
+    from {
+        left: 144%;
+    }
+    to {
+        left: -110%;
+    }
+}
+
+@keyframes rotaty {
+    0% {
+        transform: translateX(-100%) rotateY(0deg);
+    }
+    30% {
+        transform: translateX(-20%) rotateY(200deg);
+    }
+    100% {
+        transform: translateX(0) rotateY(360deg);
+    }
+}
+
+@keyframes smallrotaty {
+    0% {
+        transform: translateX(-500%) rotateY(0deg); visibility: visible;
+    }
+    30% {
+        transform: translateX(-72%) rotateY(200deg); visibility: visible;
+    }
+    100% {
+        transform: translateX(0) rotateY(360deg); visibility: visible;
+    }
+}
